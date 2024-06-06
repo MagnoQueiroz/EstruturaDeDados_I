@@ -13,16 +13,16 @@ void veriPar(int *vetorPar, int tamanho){
 int main(void) {
     int tamanho = 0;
     int *vetorPar = (int *)malloc(tamanho * sizeof(int));
-
+    //if(vetorPar == NULL)
     printf("digite o tamanho do vetor ");
     scanf("%d", &tamanho);
 
     for (int index = 0; index < tamanho; index++) {
-        printf("digite um numero: ");
+        printf("digite %d numero: ",(index+1));
         scanf("%d", &vetorPar[index]);
-    }
+    };
 
-    // pq aqui n passo endereço?? ou n passo o ponteiro??
+// vector is address for 1º index
     veriPar(vetorPar, tamanho);
     return 0;
 }
