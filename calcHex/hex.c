@@ -3,13 +3,13 @@
 #include <math.h>
 
 void calcula_hexagono(float l, float *area, float *perimetro) {
-    *area = (3*l*sqrt(3)/2);
+    float raiz = sqrt(3);
+    *area = (3*l*raiz/2);
     *perimetro = 6*l;
 
 }
 
 int main() {
-
     float l, area, perimetro;
     float newl;
 
