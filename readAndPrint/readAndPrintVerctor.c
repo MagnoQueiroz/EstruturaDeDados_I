@@ -25,7 +25,7 @@ float * tamanhoVetor() {
 }
 
 float * editTamanho(float * vetor) {
-    int novotamanho= 0;
+    int novotamanho = 0;
 
     printf("digite um novo tamanho para o vetor: ");
     scanf("%d", &novotamanho);
